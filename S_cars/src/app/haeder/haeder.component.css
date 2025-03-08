@@ -1,0 +1,22 @@
+
+.activated{
+  color: rgb(240, 217, 11);
+  position: relative;
+}
+.activated::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 2px rgb(240, 217, 11) solid;
+  /* top:   ; */
+  top:  calc(100% + 15px);
+  left: 0%;
+}
+.activated{
+  color: rgba(240, 217, 11, 0.89);
+}
+@media (max-width: 992px) {
+  .activated::after{
+    top:97%
+  }
+}
