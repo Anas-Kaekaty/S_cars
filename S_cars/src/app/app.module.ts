@@ -13,7 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 
 
 const routes:Routes=[
-  {path:'', component:LandingComponent},
+  {path:'', redirectTo:'Landing', pathMatch:'full'},
   {path:'Landing', component:LandingComponent},
   {path:'About', component:AboutUsComponent},
   {path:'Contact', component:ContactUsComponent},
